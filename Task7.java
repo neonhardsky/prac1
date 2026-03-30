@@ -2,9 +2,8 @@ package ru.mirea.prac1;
 
 import java.util.Scanner;
 
-public class task7 {
+public class Task7 {
 
-    // Метод для вычисления факториала
     public static long factorial(int n) {
         if (n < 0) {
             throw new IllegalArgumentException("Факториал отрицательного числа не определён");
@@ -24,8 +23,7 @@ public class task7 {
         long fact = factorial(number);
         System.out.println(number + "! = " + fact);
 
-        // Дополнительная проверка для нескольких значений
-        System.out.println("\nПроверка работы метода:");
+        System.out.println("\nПроверка для чисел от 0 до 10:");
         for (int i = 0; i <= 10; i++) {
             System.out.println(i + "! = " + factorial(i));
         }
