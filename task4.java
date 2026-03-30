@@ -5,42 +5,34 @@ import java.util.Scanner;
 public class task4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Введите размер массива: ");
+        System.out.print("Enter array size: ");
         int size = scanner.nextInt();
-
         int[] array = new int[size];
-
-        System.out.println("Введите " + size + " целых чисел:");
+        System.out.println("Enter elements:");
         for (int i = 0; i < size; i++) {
             array[i] = scanner.nextInt();
         }
-
         int sumWhile = 0;
         int i = 0;
-        while (i < array.length) {
+        while (i < size) {
             sumWhile += array[i];
             i++;
         }
-        System.out.println("Сумма (через while): " + sumWhile);
-
         int sumDoWhile = 0;
-        int j = 0;
+        i = 0;
         do {
-            sumDoWhile += array[j];
-            j++;
-        } while (j < array.length);
-        System.out.println("Сумма (через do-while): " + sumDoWhile);
-
+            sumDoWhile += array[i];
+            i++;
+        } while (i < size);
         int min = array[0];
         int max = array[0];
-
-        for (int k = 1; k < array.length; k++) {
-            if (array[k] < min) min = array[k];
-            if (array[k] > max) max = array[k];
+        for (int num : array) {
+            if (num < min) min = num;
+            if (num > max) max = num;
         }
-
-        System.out.println("Минимальный элемент: " + min);
-        System.out.println("Максимальный элемент: " + max);
+        System.out.println("Sum (while): " + sumWhile);
+        System.out.println("Sum (do-while): " + sumDoWhile);
+        System.out.println("Min: " + min);
+        System.out.println("Max: " + max);
     }
 }
