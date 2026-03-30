@@ -2,7 +2,7 @@ package ru.mirea.prac1;
 
 import java.util.Scanner;
 
-public class Task4 {
+public class task4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

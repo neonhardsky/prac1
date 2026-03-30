@@ -1,6 +1,6 @@
 package ru.mirea.prac1;
 
-public class Task5 {
+public class task5 {
     public static void main(String[] args) {
         System.out.println("Аргументы командной строки:");
         if (args.length == 0) {

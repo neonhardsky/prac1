@@ -2,7 +2,7 @@ package ru.mirea.prac1;
 
 import java.util.Scanner;
 
-public class Task7 {
+public class task7 {
 
     public static long factorial(int n) {
         if (n < 0) {

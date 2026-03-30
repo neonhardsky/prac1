@@ -1,6 +1,6 @@
 package ru.mirea.prac1;
 
-public class Task3 {
+public class task3 {
     public static void main(String[] args) {
         int[] numbers = {5, 10, 15, 20, 25};
 
